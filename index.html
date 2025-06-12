@@ -7,80 +7,105 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
-      background-color: #f8f8f8;
-      color: #222;
+      color: #2b1d0e;
+      background-image: url('https://images.unsplash.com/photo-1612981885424-09b8507d4e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80'); /* arrière-plan désert */
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
       scroll-behavior: smooth;
     }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.92);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
     .official-header {
       text-align: center;
       padding: 40px 20px;
-      background-color: white;
-      border-bottom: 2px solid #ccc;
+      background-color: #fff7ed;
+      border-bottom: 2px solid #d2b48c;
       line-height: 1.8;
     }
+
+    .official-header img {
+      max-height: 100px;
+      margin-bottom: 20px;
+    }
+
     .official-header .fr {
       font-size: 16px;
       font-weight: bold;
     }
+
     .cover {
-      background-color: #1a1a40;
-      color: white;
+      background-color: #d9c9a8;
+      color: #2b1d0e;
       padding: 40px 20px;
       text-align: center;
     }
+
     .cover h1, .cover h2, .cover h3, .cover h4, .cover p {
       margin: 10px 0;
     }
-    .cover h1 {
-      font-size: 28px;
-    }
+
     .cover h2 {
       font-size: 22px;
     }
+
     .cover h3 {
       font-size: 20px;
     }
-    .cover h4 {
-      font-size: 18px;
-    }
+
     .cover p {
       font-size: 17px;
     }
+
     .section {
       padding: 40px 20px;
       text-align: center;
     }
+
     .section h2 {
       margin-bottom: 20px;
+      color: #5e3d1c;
     }
+
     .buttons {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
     }
+
     .wilayas a {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-decoration: none;
-      color: #1a1a40;
+      color: #3d2b1f;
       font-weight: bold;
-      border: 1px solid #ccc;
+      border: 1px solid #a97447;
       border-radius: 10px;
       padding: 15px;
       width: 150px;
-      background-color: #fefefe;
+      background-color: #fffefc;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
     }
+
     .wilayas a:hover {
-      background-color: #e0f2ff;
+      background-color: #ffe9c6;
     }
+
     .wilayas img {
       width: 64px;
       height: 64px;
       margin-bottom: 10px;
     }
+
     .tools {
       display: flex;
       justify-content: center;
@@ -88,11 +113,13 @@
       margin-top: 40px;
       flex-wrap: wrap;
     }
+
     .tools a {
       text-decoration: none;
-      color: #222;
+      color: #3d2b1f;
       text-align: center;
     }
+
     .tools img {
       width: 80px;
       height: auto;
@@ -100,60 +127,61 @@
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <div class="official-header">
+      <img alt="Logo Université Tlemcen" src="https://upload.wikimedia.org/wikipedia/fr/f/f1/Logo_de_l%27universit%C3%A9_de_Tlemcen.png"/>
+      <div class="fr">
+        REPUBLIQUE ALGERIENNE DEMOCRATIQUE ET POPULAIRE<br>
+        Ministère de l’Enseignement Supérieur et de la Recherche Scientifique<br>
+        Université Abou Bekr Belkaïd – Tlemcen
+      </div>
+    </div>
 
-<div class="official-header">
-  <div class="fr">
-    REPUBLIQUE ALGERIENNE DEMOCRATIQUE ET POPULAIRE<br>
-    Ministère de l’Enseignement Supérieur et de la Recherche Scientifique<br>
-    Université Abou Bekr Belkaïd – Tlemcen
+    <div class="cover">
+      <h2>Faculté de Technologie</h2>
+      <h3>MEMOIRE</h3>
+      <p>Présenté pour l’obtention du diplôme de MASTER</p>
+      <p>En : Métiers de la ville – Spécialité : Géomatique et Gestion du Foncier</p>
+      <p><strong>Sujet :</strong></p>
+      <p><em>« Techniques de la télédétection et des SIG dans la cartographie et l’analyse de la désertification en Algérie : Cas d’étude des Wilayas [Djelfa, Laghouat, Naâma, Tiaret et El Bayadh] »</em></p>
+      <p>Par : <strong>BRAHMI Chams Eddine</strong> &nbsp;|&nbsp; <strong>BOUAZZA Hichem</strong></p>
+      <p><strong>Soutenu publiquement le 30/06/2025, devant le jury composé de :</strong></p>
+      <p>M. CHERIF BENMOUSSA Yazid – MAA – Université de Tlemcen – Président</p>
+      <p>Mme DERKAOUI Aïcha – MAA – Université de Tlemcen – Examinatrice</p>
+      <p>Mme BENZENINE Fayla – MCB – Université de Tlemcen – Encadrante</p>
+      <p><strong>Année universitaire :</strong> 2024–2025</p>
+    </div>
+
+    <div class="section" id="resultats">
+      <h2>🧭 Analyse DSI 2022 – Cliquez sur une wilaya</h2>
+      <div class="buttons wilayas">
+        <a href="DSI_Djelfa.html" target="_blank"><img alt="Djelfa" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Djelfa</a>
+        <a href="DSI_Laghouat.html" target="_blank"><img alt="Laghouat" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Laghouat</a>
+        <a href="DSI_Elbayadh.html" target="_blank"><img alt="El Bayadh" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>El Bayadh</a>
+        <a href="DSI_Naama.html" target="_blank"><img alt="Naâma" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Naâma</a>
+        <a href="DSI_Tiaret.html" target="_blank"><img alt="Tiaret" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Tiaret</a>
+      </div>
+
+      <h2 style="margin-top: 50px;">📄 Télécharger le PFE</h2>
+      <div class="tools">
+        <a href="https://raw.githubusercontent.com/universitystudents/geomatics/6eed669c095b11383848250a7233811b96a273a5/PFE_BRAHMI%20Chams%20Eddine%20et%20BOUAZZA%20Hichem_MGGF_2025.pdf" target="_blank" download>
+          <img alt="PDF" src="https://cdn-icons-png.flaticon.com/512/337/337946.png"/>
+          <p>Projet de fin d’étude</p>
+        </a>
+      </div>
+
+      <h2 style="margin-top: 50px;">🛠️ Outils utilisés</h2>
+      <div class="tools">
+        <a href="https://earthengine.google.com/" target="_blank">
+          <img alt="Google Earth Engine" src="https://images.icon-icons.com/1508/PNG/512/googleearth-engine_104576.png"/>
+          <p>Google Earth Engine</p>
+        </a>
+        <a href="https://jupyter.org/" target="_blank">
+          <img alt="Jupyter Notebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/512px-Jupyter_logo.svg.png"/>
+          <p>Jupyter Notebook</p>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="cover">
-  <h2>Faculté de Technologie</h2>
-  <h3>MEMOIRE</h3>
-  <p>Présenté pour l’obtention du diplôme de MASTER</p>
-  <p>En : Métiers de la ville – Spécialité : Géomatique et Gestion du Foncier</p>
-  <p><strong>Sujet :</strong></p>
-  <p><em>« Techniques de la télédétection et des SIG dans la cartographie et l’analyse de la désertification en Algérie : Cas d’étude des Wilayas [Djelfa, Laghouat, Naâma, Tiaret et El Bayadh] »</em></p>
-  <p>Par : <strong>BRAHMI Chams Eddine</strong> &nbsp;|&nbsp; <strong>BOUAZZA Hichem</strong></p>
-  <p><strong>Soutenu publiquement le 30/06/2025, devant le jury composé de :</strong></p>
-  <p>M. CHERIF BENMOUSSA Yazid – MAA – Université de Tlemcen – Président</p>
-  <p>Mme DERKAOUI Aïcha – MAA – Université de Tlemcen – Examinatrice</p>
-  <p>Dr BENZENINE Fayla – MCB – Université de Tlemcen – Encadrante</p>
-  <p><strong>Année universitaire :</strong> 2024–2025</p>
-</div>
-
-<div class="section" id="resultats">
-  <h2>🧭 Analyse DSI 2022 – Cliquez sur une wilaya</h2>
-  <div class="buttons wilayas">
-    <a href="DSI_Djelfa.html" target="_blank"><img alt="Djelfa" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Djelfa</a>
-    <a href="DSI_Laghouat.html" target="_blank"><img alt="Laghouat" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Laghouat</a>
-    <a href="DSI_Elbayadh.html" target="_blank"><img alt="El Bayadh" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>El Bayadh</a>
-    <a href="DSI_Naama.html" target="_blank"><img alt="Naâma" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Naâma</a>
-    <a href="DSI_Tiaret.html" target="_blank"><img alt="Tiaret" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Tiaret</a>
-  </div>
-
-  <h2 style="margin-top: 50px;">📄 Télécharger le PFE</h2>
-  <div class="tools">
-    <a href="https://raw.githubusercontent.com/universitystudents/geomatics/6eed669c095b11383848250a7233811b96a273a5/PFE_BRAHMI%20Chams%20Eddine%20et%20BOUAZZA%20Hichem_MGGF_2025.pdf" target="_blank" download>
-      <img alt="PDF" src="https://cdn-icons-png.flaticon.com/512/337/337946.png"/>
-      <p>Projet de fin d’étude</p>
-    </a>
-  </div>
-
-  <h2 style="margin-top: 50px;">🛠️ Outils utilisés</h2>
-  <div class="tools">
-    <a href="https://earthengine.google.com/" target="_blank">
-      <img alt="Google Earth Engine" src="https://images.icon-icons.com/1508/PNG/512/googleearth-engine_104576.png"/>
-      <p>Google Earth Engine</p>
-    </a>
-    <a href="https://jupyter.org/" target="_blank">
-      <img alt="Jupyter Notebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/512px-Jupyter_logo.svg.png"/>
-      <p>Jupyter Notebook</p>
-    </a>
-  </div>
-</div>
-
 </body>
 </html>
