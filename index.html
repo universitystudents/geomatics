@@ -1,185 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8"/>
-    <title>Analyse DSI – Algérie 2022</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0; padding: 0;
-            background-color: #f8f8f8;
-            color: #222;
-            scroll-behavior: smooth;
-        }
-        .cover {
-            background-color: #1a1a40;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .cover h1, .cover h2, .cover h3, .cover h4 {
-            margin: 10px 0;
-        }
-        .cover h1 {
-            font-size: 32px;
-        }
-        .cover h2 {
-            font-size: 24px;
-        }
-        .cover h3 {
-            font-size: 20px;
-        }
-        .cover h4 {
-            font-size: 18px;
-        }
-        .cover p {
-            font-size: 17px;
-            margin: 5px 0;
-        }
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .section h2 {
-            margin-bottom: 20px;
-        }
-        .buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .wilayas a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            color: #1a1a40;
-            font-weight: bold;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 15px;
-            width: 150px;
-            background-color: #fefefe;
-            box-shadow: 0 0 8px rgba(0,0,0,0.1);
-        }
-        .wilayas a:hover {
-            background-color: #e0f2ff;
-        }
-        .wilayas img {
-            width: 64px;
-            height: 64px;
-            margin-bottom: 10px;
-        }
-        .tools {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-        .tools a {
-            text-decoration: none;
-            color: #222;
-            text-align: center;
-        }
-        .tools img {
-            width: 80px;
-            height: auto;
-        }
-    </style>
+  <meta charset="utf-8"/>
+  <title>Analyse DSI – Algérie 2022</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f8f8f8;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    .official-header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: white;
+      border-bottom: 2px solid #ccc;
+      line-height: 1.8;
+    }
+    .official-header .fr {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .cover {
+      background-color: #1a1a40;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cover h1, .cover h2, .cover h3, .cover h4, .cover p {
+      margin: 10px 0;
+    }
+    .cover h1 {
+      font-size: 28px;
+    }
+    .cover h2 {
+      font-size: 22px;
+    }
+    .cover h3 {
+      font-size: 20px;
+    }
+    .cover h4 {
+      font-size: 18px;
+    }
+    .cover p {
+      font-size: 17px;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .wilayas a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #1a1a40;
+      font-weight: bold;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      width: 150px;
+      background-color: #fefefe;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .wilayas a:hover {
+      background-color: #e0f2ff;
+    }
+    .wilayas img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 10px;
+    }
+    .tools {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .tools a {
+      text-decoration: none;
+      color: #222;
+      text-align: center;
+    }
+    .tools img {
+      width: 80px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
+<div class="official-header">
+  <div class="fr">
+    REPUBLIQUE ALGERIENNE DEMOCRATIQUE ET POPULAIRE<br>
+    Ministère de l’Enseignement Supérieur et de la Recherche Scientifique<br>
+    Université Abou Bekr Belkaïd – Tlemcen
+  </div>
+</div>
+
 <div class="cover">
-    <img alt="Logo Université Tlemcen" src="https://upload.wikimedia.org/wikipedia/fr/f/f1/Logo_de_l%27universit%C3%A9_de_Tlemcen.png" style="max-height:100px; margin-bottom:20px;"/>
-    <h2 style="font-weight: bold; font-size: 20px;">الجـــــــــــمــــهـــــوريـــــــــــة الجــــــــــــــــزائـــريـــــة الديمــقــراطــيـــــة الــشــعــبــيــــة</h2>
-    <h3 style="font-weight: bold;">REPUBLIQUE ALGERIENNE DEMOCRATIQUE ET POPULAIRE</h3>
-
-    <h2 style="font-weight: bold;">وزارة التعليم العالي والبحث العلمي</h2>
-    <h3>Ministère de l’Enseignement Supérieur et de la Recherche Scientifique</h3>
-
-    <h2>جــامعــة أبــي بــكر بــلــقــايــد – تلمسان</h2>
-    <h3>Université Abou Bekr Belkaïd – Tlemcen</h3>
-
-    <h3 style="margin-top: 20px;">كلية التكنولوجيا</h3>
-    <h3>Faculté de Technologie</h3>
-
-    <h2 style="margin-top: 30px;">MEMOIRE</h2>
-    <p style="font-size: 18px;">Présenté pour l’obtention du diplôme de <strong>MASTER</strong></p>
-    <p>En : Métiers de la ville &nbsp;&nbsp; | &nbsp;&nbsp; Spécialité : Géomatique et gestion du foncier</p>
-
-    <p style="margin-top: 30px; font-size: 18px;"><strong>Par :</strong> BRAHMI Chams Eddine &nbsp; & BOUAZZA Hichem</p>
-
-    <h3 style="margin-top: 40px;">Sujet du mémoire</h3>
-    <p style="font-size: 17px; margin: 10px auto; max-width: 800px;">
-        « Techniques de la télédétection et des SIG dans la cartographie et l’analyse de la désertification en Algérie :
-        <br/>
-        Cas d’étude des Wilayas [Djelfa, Laghouat, Naâma, Tiaret et El Bayadh] »
-    </p>
-
-    <h3 style="margin-top: 40px;">Soutenu publiquement le : <strong>30/06/2025</strong></h3>
-
-    <h3 style="margin-top: 30px;">Devant le jury :</h3>
-    <table style="margin: 0 auto; text-align: center; font-size: 16px; border-collapse: collapse;">
-        <tr>
-            <th style="padding: 8px; border: 1px solid #ccc;">Nom</th>
-            <th style="padding: 8px; border: 1px solid #ccc;">Grade</th>
-            <th style="padding: 8px; border: 1px solid #ccc;">Établissement</th>
-            <th style="padding: 8px; border: 1px solid #ccc;">Rôle</th>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ccc;">M CHERIF BENMOUSSA Yazid</td>
-            <td>MAA</td>
-            <td>Université de Tlemcen</td>
-            <td>Président</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ccc;">Mme DERKAOUI Aïcha</td>
-            <td>MAA</td>
-            <td>Université de Tlemcen</td>
-            <td>Examinatrice</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ccc;">Mme BENZENINE Faïla</td>
-            <td>MCB</td>
-            <td>Université de Tlemcen</td>
-            <td>Encadrante</td>
-        </tr>
-    </table>
-
-    <p style="margin-top: 40px;"><strong>Année universitaire :</strong> 2024 / 2025</p>
+  <h2>Faculté de Technologie</h2>
+  <h3>MEMOIRE</h3>
+  <p>Présenté pour l’obtention du diplôme de MASTER</p>
+  <p>En : Métiers de la ville – Spécialité : Géomatique et Gestion du Foncier</p>
+  <p><strong>Sujet :</strong></p>
+  <p><em>« Techniques de la télédétection et des SIG dans la cartographie et l’analyse de la désertification en Algérie : Cas d’étude des Wilayas [Djelfa, Laghouat, Naâma, Tiaret et El Bayadh] »</em></p>
+  <p>Par : <strong>BRAHMI Chams Eddine</strong> &nbsp;|&nbsp; <strong>BOUAZZA Hichem</strong></p>
+  <p><strong>Soutenu publiquement le 30/06/2025, devant le jury composé de :</strong></p>
+  <p>M. CHERIF BENMOUSSA Yazid – MAA – Université de Tlemcen – Président</p>
+  <p>Mme DERKAOUI Aïcha – MAA – Université de Tlemcen – Examinatrice</p>
+  <p>Dr BENZENINE Fayla – MCB – Université de Tlemcen – Encadrante</p>
+  <p><strong>Année universitaire :</strong> 2024–2025</p>
 </div>
 
 <div class="section" id="resultats">
-    <h2>🧭 Analyse DSI 2022 – Cliquez sur une wilaya</h2>
-    <div class="buttons wilayas">
-        <a href="DSI_Djelfa.html" target="_blank"><img alt="Djelfa" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Djelfa</a>
-        <a href="DSI_Laghouat.html" target="_blank"><img alt="Laghouat" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Laghouat</a>
-        <a href="DSI_Elbayadh.html" target="_blank"><img alt="El Bayadh" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>El Bayadh</a>
-        <a href="DSI_Naama.html" target="_blank"><img alt="Naâma" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Naâma</a>
-        <a href="DSI_Tiaret.html" target="_blank"><img alt="Tiaret" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Tiaret</a>
-    </div>
+  <h2>🧭 Analyse DSI 2022 – Cliquez sur une wilaya</h2>
+  <div class="buttons wilayas">
+    <a href="DSI_Djelfa.html" target="_blank"><img alt="Djelfa" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Djelfa</a>
+    <a href="DSI_Laghouat.html" target="_blank"><img alt="Laghouat" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Laghouat</a>
+    <a href="DSI_Elbayadh.html" target="_blank"><img alt="El Bayadh" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>El Bayadh</a>
+    <a href="DSI_Naama.html" target="_blank"><img alt="Naâma" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Naâma</a>
+    <a href="DSI_Tiaret.html" target="_blank"><img alt="Tiaret" src="https://game-icons.net/icons/000000/transparent/1x1/delapouite/algeria.png"/>Tiaret</a>
+  </div>
 
-    <h2 style="margin-top: 50px;">📄 Veuillez télécharger le PFE, appuyez sur l’icône ci-dessous</h2>
-    <div class="tools">
-        <a href="https://raw.githubusercontent.com/universitystudents/geomatics/6eed669c095b11383848250a7233811b96a273a5/PFE_BRAHMI%20Chams%20Eddine%20et%20BOUAZZA%20Hichem_MGGF_2025.pdf" target="_blank" download>
-            <img alt="PDF" src="https://cdn-icons-png.flaticon.com/512/337/337946.png"/>
-            <p>Télécharger le projet de fin d'étude</p>
-        </a>
-    </div>
+  <h2 style="margin-top: 50px;">📄 Télécharger le PFE</h2>
+  <div class="tools">
+    <a href="https://raw.githubusercontent.com/universitystudents/geomatics/6eed669c095b11383848250a7233811b96a273a5/PFE_BRAHMI%20Chams%20Eddine%20et%20BOUAZZA%20Hichem_MGGF_2025.pdf" target="_blank" download>
+      <img alt="PDF" src="https://cdn-icons-png.flaticon.com/512/337/337946.png"/>
+      <p>Projet de fin d’étude</p>
+    </a>
+  </div>
 
-    <h2 style="margin-top: 50px;">🛠️ Outils utilisés</h2>
-    <div class="tools">
-        <a href="https://earthengine.google.com/" target="_blank">
-            <img alt="Google Earth Engine" src="https://images.icon-icons.com/1508/PNG/512/googleearth-engine_104576.png"/>
-            <p>Google Earth Engine</p>
-        </a>
-        <a href="https://jupyter.org/" target="_blank">
-            <img alt="Jupyter Notebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/512px-Jupyter_logo.svg.png"/>
-            <p>Jupyter Notebook</p>
-        </a>
-    </div>
+  <h2 style="margin-top: 50px;">🛠️ Outils utilisés</h2>
+  <div class="tools">
+    <a href="https://earthengine.google.com/" target="_blank">
+      <img alt="Google Earth Engine" src="https://images.icon-icons.com/1508/PNG/512/googleearth-engine_104576.png"/>
+      <p>Google Earth Engine</p>
+    </a>
+    <a href="https://jupyter.org/" target="_blank">
+      <img alt="Jupyter Notebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/512px-Jupyter_logo.svg.png"/>
+      <p>Jupyter Notebook</p>
+    </a>
+  </div>
 </div>
 
 </body>
