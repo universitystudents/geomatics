@@ -13,19 +13,19 @@
     }
 
     .overlay {
-      background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
-        url('https://raw.githubusercontent.com/universitystudents/geomatics/refs/heads/main/desertification.avif') no-repeat center center fixed;
+      background: url('https://raw.githubusercontent.com/universitystudents/geomatics/refs/heads/main/desertification.avif') no-repeat center center fixed;
       background-size: cover;
       min-height: 100vh;
       padding-bottom: 50px;
     }
 
-    .official-header {
+    .official-header, .cover {
+      background-color: rgba(255, 255, 255, 0.6); /* transparence */
+      backdrop-filter: blur(4px);                /* flou en arrière */
+      border-radius: 10px;
+      margin: 20px;
+      padding: 20px;
       text-align: center;
-      padding: 40px 20px;
-      border-bottom: 2px solid #d2b48c;
-      line-height: 1.8;
-      background-color: transparent;
     }
 
     .official-header img {
@@ -38,27 +38,13 @@
       font-weight: bold;
     }
 
-    .cover {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: transparent;
-    }
-
     .cover h1, .cover h2, .cover h3, .cover h4, .cover p {
       margin: 10px 0;
     }
 
-    .cover h2 {
-      font-size: 22px;
-    }
-
-    .cover h3 {
-      font-size: 20px;
-    }
-
-    .cover p {
-      font-size: 17px;
-    }
+    .cover h2 { font-size: 22px; }
+    .cover h3 { font-size: 20px; }
+    .cover p  { font-size: 17px; }
 
     .section {
       padding: 40px 20px;
